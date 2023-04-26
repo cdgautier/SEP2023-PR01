@@ -1,2 +1,6 @@
 modificación 1
+<<<<<<< HEAD
 modificación 2
+=======
+modificacion 3
+>>>>>>> 6ab17df64b7ba3d654b8b6ed53e1329bffced251
