@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 26.04.2023 00:53:10
+-- Create Date: 03.05.2023 15:16:45
 -- Design Name: 
--- Module Name: pwm_package - Behavioral
+-- Module Name: multiplexor_package - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,10 +31,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-PACKAGE pwm_package is
+package multiplexor_package is
+    component multiplexor_led is
+        Port( btn: in STD_LOGIC; sel_out: out STD_LOGIC_VECTOR (1 downto 0));
+    end component;
 --  Port ( );
-    COMPONENT pwm_generator is
-        PORT (clk: in  std_logic; reset: in  std_logic; duty: in  integer range 0 to 100; frequency: in  integer; freq_value: out integer);
-    end COMPONENT;
+end multiplexor_package;
 
-end pwm_package;

@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 26.04.2023 00:53:10
+-- Create Date: 03.05.2023 15:09:52
 -- Design Name: 
--- Module Name: pwm_package - Behavioral
+-- Module Name: operator_package - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,10 +31,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-PACKAGE pwm_package is
---  Port ( );
-    COMPONENT pwm_generator is
-        PORT (clk: in  std_logic; reset: in  std_logic; duty: in  integer range 0 to 100; frequency: in  integer; freq_value: out integer);
-    end COMPONENT;
+package operator_package is
+-------OPERATOR--------
+    component operador is
+        Port(clk:            in STD_LOGIC; value:          in STD_LOGIC_VECTOR (3 DOWNTO 0); -- valor de nuestros SW
+        buttonState:    in STD_LOGIC_VECTOR (1 DOWNTO 0); -- Tipo de operador seg´un bot´on
+        buttonLed:      out STD_LOGIC; -- Led que se encender´a al apretar bot´on
+        output:         out STD_LOGIC);
+    end component;
 
-end pwm_package;
+end operator_package;
+
