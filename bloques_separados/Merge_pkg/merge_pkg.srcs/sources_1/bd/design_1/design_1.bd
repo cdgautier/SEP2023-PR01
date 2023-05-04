@@ -1,0 +1,93 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z010clg400-1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1"
+    },
+    "design_tree": {
+      "multiplexor_led_0": "",
+      "selector_led_0": "",
+      "operador_0": "",
+      "top_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "b1_0": {
+        "direction": "I"
+      },
+      "b2_3_0": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "b4_0": {
+        "direction": "I"
+      },
+      "Switches_0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "multiplexor_led_0": {
+        "vlnv": "xilinx.com:user:multiplexor_led:1.0",
+        "xci_name": "design_1_multiplexor_led_0_0"
+      },
+      "selector_led_0": {
+        "vlnv": "xilinx.com:user:selector_led:1.0",
+        "xci_name": "design_1_selector_led_0_0"
+      },
+      "operador_0": {
+        "vlnv": "xilinx.com:user:operador:1.0",
+        "xci_name": "design_1_operador_0_0"
+      },
+      "top_0": {
+        "vlnv": "xilinx.com:user:top:1.0",
+        "xci_name": "design_1_top_0_0"
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "top_0/clk",
+          "operador_0/clk"
+        ]
+      },
+      "b1_0_1": {
+        "ports": [
+          "b1_0",
+          "top_0/b1"
+        ]
+      },
+      "b2_3_0_1": {
+        "ports": [
+          "b2_3_0",
+          "top_0/b2_3"
+        ]
+      },
+      "b4_0_1": {
+        "ports": [
+          "b4_0",
+          "top_0/b4",
+          "multiplexor_led_0/btn"
+        ]
+      },
+      "Switches_0_1": {
+        "ports": [
+          "Switches_0",
+          "top_0/Switches",
+          "operador_0/value"
+        ]
+      }
+    }
+  }
+}

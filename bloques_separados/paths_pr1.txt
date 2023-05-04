@@ -1,0 +1,10 @@
+led_pack
+c:/stem/sep2023/proyectos/sep2023-pr01/Led_Pack/led_pack.srcs/sources_1/new
+operator
+c:/stem/sep2023/proyectos/sep2023-pr01/opr/operator.srcs/sources_1/new
+selector
+c:/stem/sep2023/proyectos/sep2023-pr01/selector/selector.srcs/sources_1/new
+
+C:/STEM/SEP2023/proyectos/SEP2023-PR01/pkg_top
+
+

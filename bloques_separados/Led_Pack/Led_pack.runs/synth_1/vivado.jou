@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May  3 18:54:17 2023
+# Process ID: 22496
+# Current directory: C:/STEM/SEP2023/proyectos/SEP2023-PR01/Led_pack.runs/synth_1
+# Command line: vivado.exe -log multiplexor_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiplexor_led.tcl
+# Log file: C:/STEM/SEP2023/proyectos/SEP2023-PR01/Led_pack.runs/synth_1/multiplexor_led.vds
+# Journal file: C:/STEM/SEP2023/proyectos/SEP2023-PR01/Led_pack.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source multiplexor_led.tcl -notrace

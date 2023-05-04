@@ -1,18 +1,14 @@
-
-
-
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity multiplexor_led is
-    Port ( btn : in STD_LOGIC;
+    Port ( 
+           btn : in STD_LOGIC;
            sel_out : out STD_LOGIC_VECTOR (1 downto 0));
 end multiplexor_led;
 
 architecture Behavioral of multiplexor_led is
-    signal count : integer range 0 to 2 := 0;
+    signal count : integer range 0 to 3 := 0;
 begin
     process(btn)
     begin

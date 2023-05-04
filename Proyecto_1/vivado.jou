@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May  3 19:22:13 2023
+# Process ID: 16616
+# Current directory: C:/STEM/SEP2023/proyectos/SEP2023-PR01/Proyecto_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19860 C:\STEM\SEP2023\proyectos\SEP2023-PR01\Proyecto_1\Proyecto_1.xpr
+# Log file: C:/STEM/SEP2023/proyectos/SEP2023-PR01/Proyecto_1/vivado.log
+# Journal file: C:/STEM/SEP2023/proyectos/SEP2023-PR01/Proyecto_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/STEM/SEP2023/proyectos/SEP2023-PR01/Proyecto_1/Proyecto_1.xpr
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir C:/STEM/SEP2023/proyectos/pkg_top -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/STEM/SEP2023/proyectos/pkg_top/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/STEM/SEP2023/proyectos/pkg_top c:/STEM/SEP2023/proyectos/pkg_top/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  c:/STEM/SEP2023/proyectos/pkg_top [current_project]
+update_ip_catalog
+create_project merge_pkg C:/STEM/SEP2023/proyectos/SEP2023-PR01/Merge_pkg -part xc7z010clg400-1
+set_property board_part digilentinc.com:zybo-z7-10:part0:1.1 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  c:/stem/sep2023/proyectos/sep2023-pr01/Led_Pack/led_pack.srcs/sources_1/new [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/stem/sep2023/proyectos/sep2023-pr01/Led_Pack/led_pack.srcs/sources_1/new c:/stem/sep2023/proyectos/sep2023-pr01/opr/operator.srcs/sources_1/new} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/stem/sep2023/proyectos/sep2023-pr01/Led_Pack/led_pack.srcs/sources_1/new c:/stem/sep2023/proyectos/sep2023-pr01/opr/operator.srcs/sources_1/new c:/stem/sep2023/proyectos/sep2023-pr01/selector/selector.srcs/sources_1/new} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/stem/sep2023/proyectos/sep2023-pr01/Led_Pack/led_pack.srcs/sources_1/new c:/stem/sep2023/proyectos/sep2023-pr01/opr/operator.srcs/sources_1/new c:/stem/sep2023/proyectos/sep2023-pr01/selector/selector.srcs/sources_1/new C:/STEM/SEP2023/proyectos/SEP2023-PR01/pkg_top} [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:multiplexor_led:1.0 multiplexor_led_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:selector_led:1.0 selector_led_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:operador:1.0 operador_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:top:1.0 top_0
+endgroup
+file mkdir C:/STEM/SEP2023/proyectos/SEP2023-PR01/Merge_pkg/merge_pkg.srcs/constrs_1
+add_files -fileset constrs_1 -norecurse C:/STEM/SEP2023/proyectos/Zybo-Z7-Master.xdc
+import_files -fileset constrs_1 C:/STEM/SEP2023/proyectos/Zybo-Z7-Master.xdc
+set_property location {1 7 -446} [get_bd_cells top_0]
+set_property location {4 778 -400} [get_bd_cells selector_led_0]
+set_property location {2.5 509 -190} [get_bd_cells operador_0]
+set_property location {1.5 363 -446} [get_bd_cells multiplexor_led_0]
+set_property location {3 569 -402} [get_bd_cells operador_0]
+startgroup
+make_bd_pins_external  [get_bd_pins top_0/clk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins operador_0/clk]
+endgroup
+undo
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins operador_0/clk]
+startgroup
+make_bd_pins_external  [get_bd_pins top_0/b1]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins top_0/b2_3]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins top_0/b4]
+endgroup
+startgroup
+connect_bd_net [get_bd_ports b4_0] [get_bd_pins multiplexor_led_0/btn]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins top_0/Switches]
+endgroup
+startgroup
+connect_bd_net [get_bd_ports Switches_0] [get_bd_pins operador_0/value]
+endgroup
+current_project Proyecto_1
+current_project merge_pkg
+save_bd_design
+close_project
