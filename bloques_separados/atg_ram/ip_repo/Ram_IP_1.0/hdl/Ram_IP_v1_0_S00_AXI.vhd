@@ -20,7 +20,7 @@ entity Ram_IP_v1_0_S00_AXI is
         --sw : in std_logic_vector(1 downto 0);
         btn : in std_logic;
         --write_in : in std_logic;
-        led_selec: out std_logic_vector(1 downto 0);
+        led_selec: out std_logic_vector(3 downto 0);
         --led: out std_logic_vector(3 downto 0);
 		-- User ports ends
 		-- Do not modify the ports beyond this line
