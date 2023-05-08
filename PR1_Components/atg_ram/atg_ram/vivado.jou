@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May  8 17:07:04 2023
+# Process ID: 13508
+# Current directory: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10800 C:\Users\Camilo\Desktop\bloques_separados5\atg_ram\atg_ram\atg_ram.xpr
+# Log file: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/vivado.log
+# Journal file: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.xpr
+update_compile_order -fileset sources_1

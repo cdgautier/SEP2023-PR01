@@ -1,0 +1,274 @@
+
+*** Running vivado
+    with args -log Atg_ram_operator_full_2_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Atg_ram_operator_full_2_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Atg_ram_operator_full_2_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top Atg_ram_operator_full_2_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17260
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1061.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Atg_ram_operator_full_2_0' [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ip/Atg_ram_operator_full_2_0/synth/Atg_ram_operator_full_2_0.vhd:66]
+	Parameter init_period_cnt bound to: 125000000 - type: integer 
+	Parameter init_semperiod_cnt bound to: 62500000 - type: integer 
+INFO: [Synth 8-3491] module 'operator_full' declared at 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ipshared/9ce3/sources_1/new/operator_full.vhd:7' bound to instance 'U0' of component 'operator_full' [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ip/Atg_ram_operator_full_2_0/synth/Atg_ram_operator_full_2_0.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'operator_full' [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ipshared/9ce3/sources_1/new/operator_full.vhd:21]
+	Parameter init_period_cnt bound to: 125000000 - type: integer 
+	Parameter init_semperiod_cnt bound to: 62500000 - type: integer 
+WARNING: [Synth 8-614] signal 'sig_period_cnt' is read in the process but is not in the sensitivity list [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ipshared/9ce3/sources_1/new/operator_full.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'operator_full' (1#1) [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ipshared/9ce3/sources_1/new/operator_full.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Atg_ram_operator_full_2_0' (2#1) [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ip/Atg_ram_operator_full_2_0/synth/Atg_ram_operator_full_2_0.vhd:66]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1061.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1061.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1061.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1061.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ip/Atg_ram_operator_full_2_0/constrs_1/imports/proyectos/Zybo-Z7-Master.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ip/Atg_ram_operator_full_2_0/constrs_1/imports/proyectos/Zybo-Z7-Master.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/ip/Atg_ram_operator_full_2_0/constrs_1/imports/proyectos/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Atg_ram_operator_full_2_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Atg_ram_operator_full_2_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.runs/Atg_ram_operator_full_2_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.runs/Atg_ram_operator_full_2_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1136.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1142.863 ; gain = 6.152
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.863 ; gain = 81.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.863 ; gain = 81.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.runs/Atg_ram_operator_full_2_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.863 ; gain = 81.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.863 ; gain = 81.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   31 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	               5x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 13    
+	   2 Input   31 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP max_period_cnt_f0, operation Mode is: A2*B.
+DSP Report: register max_period_cnt_f0 is absorbed into DSP max_period_cnt_f0.
+DSP Report: operator max_period_cnt_f0 is absorbed into DSP max_period_cnt_f0.
+DSP Report: operator max_period_cnt_f0 is absorbed into DSP max_period_cnt_f0.
+DSP Report: Generating DSP max_period_cnt_f0, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register max_period_cnt_f_reg is absorbed into DSP max_period_cnt_f0.
+DSP Report: operator max_period_cnt_f0 is absorbed into DSP max_period_cnt_f0.
+DSP Report: operator max_period_cnt_f0 is absorbed into DSP max_period_cnt_f0.
+DSP Report: Generating DSP period_duty_cycle0, operation Mode is: A*B.
+DSP Report: operator period_duty_cycle0 is absorbed into DSP period_duty_cycle0.
+DSP Report: operator period_duty_cycle0 is absorbed into DSP period_duty_cycle0.
+DSP Report: Generating DSP period_duty_cycle0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator period_duty_cycle0 is absorbed into DSP period_duty_cycle0.
+DSP Report: operator period_duty_cycle0 is absorbed into DSP period_duty_cycle0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 1142.863 ; gain = 81.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|operator_full | A2*B            | 18     | 5      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|operator_full | (PCIN>>17)+A2*B | 15     | 5      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|operator_full | A*B             | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|operator_full | (PCIN>>17)+A*B  | 15     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 1186.062 ; gain = 124.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 1186.957 ; gain = 125.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 1262.445 ; gain = 200.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1268.207 ; gain = 206.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1268.207 ; gain = 206.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1268.207 ; gain = 206.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1268.207 ; gain = 206.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1268.207 ; gain = 206.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1268.207 ; gain = 206.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   114|
+|2     |DSP48E1 |     4|
+|4     |LUT1    |   100|
+|5     |LUT2    |    59|
+|6     |LUT3    |   142|
+|7     |LUT4    |   166|
+|8     |LUT5    |   187|
+|9     |LUT6    |   249|
+|10    |FDRE    |   135|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1268.207 ; gain = 206.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:09 . Memory (MB): peak = 1268.207 ; gain = 125.344
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1268.207 ; gain = 206.363
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1268.207 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 118 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Atg_ram_operator_full_2_0' is not ideal for floorplanning, since the cellview 'operator_full' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1268.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1268.207 ; gain = 206.363
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.runs/Atg_ram_operator_full_2_0_synth_1/Atg_ram_operator_full_2_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Atg_ram_operator_full_2_0, cache-ID = ac24e73f0acbe015
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.runs/Atg_ram_operator_full_2_0_synth_1/Atg_ram_operator_full_2_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Atg_ram_operator_full_2_0_utilization_synth.rpt -pb Atg_ram_operator_full_2_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  8 11:06:51 2023...

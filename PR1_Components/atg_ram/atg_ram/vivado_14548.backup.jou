@@ -1,0 +1,172 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun May  7 21:48:19 2023
+# Process ID: 14548
+# Current directory: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7944 C:\Users\Camilo\Desktop\bloques_separados5\atg_ram\atg_ram\atg_ram.xpr
+# Log file: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/vivado.log
+# Journal file: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/Atg_ram.bd}
+set_property  ip_repo_paths  c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 C:/Users/Camilo/Desktop/bloques_separados5/operator_full} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full C:/Users/Camilo/Desktop/bloques_separados5/op_choser} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser C:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or C:/Users/Camilo/Desktop/bloques_separados5/selector_led2} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser C:/Users/Camilo/Desktop/bloques_separados5/selector_led2 c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or c:/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:selector_led2:1.0 selector_led2_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:verif_led_or:1.0 verif_led_or_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:Ram_IP:1.0 Ram_IP_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:operator_full:1.0 operator_full_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:operator_full:1.0 operator_full_1
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:operator_full:1.0 operator_full_2
+endgroup
+set_property location {3 633 -259} [get_bd_cells operator_full_1]
+set_property location {2 625 -138} [get_bd_cells operator_full_2]
+set_property location {0.5 183 -350} [get_bd_cells Ram_IP_0]
+set_property location {2.5 950 -335} [get_bd_cells selector_led2_0]
+set_property location {1 194 -170} [get_bd_cells verif_led_or_0]
+set_property location {3 900 -140} [get_bd_cells verif_led_or_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:op_choser:1.0 op_choser_0
+endgroup
+set_property location {1 253 -148} [get_bd_cells op_choser_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_traffic_gen:3.0 axi_traffic_gen_0
+endgroup
+set_property location {1 123 -401} [get_bd_cells axi_traffic_gen_0]
+set_property -dict [list CONFIG.C_ATG_SYSTEM_CMD_MAX_RETRY {2147483647} CONFIG.C_ATG_SYSTEM_INIT_DATA_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/data.coe} CONFIG.C_ATG_SYSTEM_INIT_ADDR_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/addr.coe} CONFIG.C_ATG_SYSTEM_INIT_MASK_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/mask.coe} CONFIG.C_ATG_SYSTEM_INIT_CTRL_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/ctrl.coe} CONFIG.C_ATG_MODE {AXI4-Lite} CONFIG.C_ATG_SYSINIT_MODES {System_Test}] [get_bd_cells axi_traffic_gen_0]
+set_property location {2 388 -142} [get_bd_cells op_choser_0]
+set_property location {0.5 -54 -150} [get_bd_cells Ram_IP_0]
+set_property location {2.5 419 -198} [get_bd_cells op_choser_0]
+connect_bd_net [get_bd_pins op_choser_0/value_out_1] [get_bd_pins operator_full_0/value]
+connect_bd_net [get_bd_pins op_choser_0/value_out_2] [get_bd_pins operator_full_1/value]
+connect_bd_net [get_bd_pins op_choser_0/value_out_3] [get_bd_pins operator_full_2/value]
+connect_bd_net [get_bd_pins op_choser_0/button_state_out_1] [get_bd_pins operator_full_0/button_state]
+connect_bd_net [get_bd_pins op_choser_0/button_state_out_2] [get_bd_pins operator_full_1/button_state]
+connect_bd_net [get_bd_pins op_choser_0/button_state_out_3] [get_bd_pins operator_full_2/button_state]
+connect_bd_net [get_bd_pins operator_full_0/out_pwm] [get_bd_pins selector_led2_0/pwm1]
+connect_bd_net [get_bd_pins operator_full_1/out_pwm] [get_bd_pins selector_led2_0/pwm2]
+connect_bd_net [get_bd_pins operator_full_2/out_pwm] [get_bd_pins selector_led2_0/pwm3]
+connect_bd_net [get_bd_pins operator_full_0/led_verif] [get_bd_pins verif_led_or_0/led_verif_1]
+connect_bd_net [get_bd_pins operator_full_1/led_verif] [get_bd_pins verif_led_or_0/led_verif_2]
+connect_bd_net [get_bd_pins operator_full_2/led_verif] [get_bd_pins verif_led_or_0/led_verif_3]
+set_property location {2 -17 -226} [get_bd_cells Ram_IP_0]
+connect_bd_net [get_bd_pins Ram_IP_0/led_selec] [get_bd_pins op_choser_0/led_select]
+connect_bd_net [get_bd_pins Ram_IP_0/led_selec] [get_bd_pins selector_led2_0/led_selector]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins op_choser_0/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins operator_full_0/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins operator_full_1/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins operator_full_2/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_traffic_gen_0/M_AXI_LITE_CH1} Slave {/Ram_IP_0/S00_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins Ram_IP_0/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins selector_led2_0/clk]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_traffic_gen_0_axi_periph_M00_AXI] [get_bd_intf_nets axi_traffic_gen_0_M_AXI_LITE_CH1] [get_bd_cells axi_traffic_gen_0_axi_periph]
+delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_cells rst_clk_wiz_100M]
+delete_bd_objs [get_bd_nets clk_wiz_4_clk_out1] [get_bd_cells clk_wiz_4]
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1] [get_bd_cells clk_wiz_1]
+delete_bd_objs [get_bd_nets clk_wiz_2_clk_out1] [get_bd_cells clk_wiz_2]
+delete_bd_objs [get_bd_nets clk_wiz_3_clk_out1] [get_bd_cells clk_wiz_3]
+delete_bd_objs [get_bd_cells clk_wiz]
+connect_bd_intf_net [get_bd_intf_pins axi_traffic_gen_0/M_AXI_LITE_CH1] [get_bd_intf_pins Ram_IP_0/S00_AXI]
+startgroup
+make_bd_pins_external  [get_bd_pins Ram_IP_0/btn]
+endgroup
+startgroup
+connect_bd_net [get_bd_pins op_choser_0/clk] [get_bd_pins operator_full_0/clk]
+endgroup
+connect_bd_net [get_bd_pins op_choser_0/clk] [get_bd_pins operator_full_1/clk]
+connect_bd_net [get_bd_pins op_choser_0/clk] [get_bd_pins operator_full_2/clk]
+connect_bd_net [get_bd_pins op_choser_0/clk] [get_bd_pins selector_led2_0/clk]
+create_project ngate C:/Users/Camilo/Desktop/bloques_separados5/ngate -part xc7z010clg400-1
+set_property board_part digilentinc.com:zybo-z7-10:part0:1.1 [current_project]
+set_property target_language VHDL [current_project]
+file mkdir C:/Users/Camilo/Desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new
+close [ open C:/Users/Camilo/Desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new/ngate.vhd w ]
+add_files C:/Users/Camilo/Desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new/ngate.vhd
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new [current_project]
+update_ip_catalog
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new
+current_project atg_ram
+set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or c:/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:ngate:1.0 ngate_0
+endgroup
+set_property location {1 -211 -500} [get_bd_cells ngate_0]
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn]
+current_project ngate
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new
+current_project atg_ram
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells ngate_0]
+update_ip_catalog -rebuild -scan_changes

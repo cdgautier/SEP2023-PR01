@@ -1,0 +1,2098 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May  4 15:24:20 2023
+# Process ID: 14416
+# Current directory: C:/STEM/SEP2023/proyectos/PR01_pwmdc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7176 C:\STEM\SEP2023\proyectos\PR01_pwmdc\pwm_gen.xpr
+# Log file: C:/STEM/SEP2023/proyectos/PR01_pwmdc/vivado.log
+# Journal file: C:/STEM/SEP2023/proyectos/PR01_pwmdc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 1047.980 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1223.895 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1842.957 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1842.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1947.504 ; gain = 899.523
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/xsim.dir/testbench_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May  4 15:27:03 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2004.039 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:45 ; elapsed = 00:00:44 . Memory (MB): peak = 2004.039 ; gain = 956.059
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 16:05:11 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 16:05:56 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2004.039 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.093 . Memory (MB): peak = 2004.039 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.094 . Memory (MB): peak = 2004.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2004.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2010.633 ; gain = 6.594
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 16:14:41 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 16:15:47 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2456.980 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 17:19:45 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 17:21:38 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.srcs/sim_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2456.980 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 17:26:17 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 17:27:14 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2456.980 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 18:13:39 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 18:14:48 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.srcs/sim_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 2456.980 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_260 at time 1009589 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_257 at time 1009590 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk153_809 at time 1009604 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 1009604 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 1009605 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 1009612 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 1009616 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 1009619 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 1009679 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk150_806 at time 1009683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_260 at time 1009756 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 1009771 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 1017727 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 1017755 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk153_809 at time 2009623 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_260 at time 2009649 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 2009664 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 2009703 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[4]/TChk150_806 at time 2009715 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 2009750 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 2009767 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 2017701 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 2017713 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[5]/TChk153_809 at time 3009633 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_260 at time 3009634 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 3009649 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 3009766 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 3017632 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 4009620 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[4]/TChk153_809 at time 4009695 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 4009742 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 4017594 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 4017656 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 4017661 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 5009605 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk153_809 at time 5009657 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 5009687 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 5017587 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 18:19:25 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 18:20:37 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 18:22:00 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2456.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.srcs/sim_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2456.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2456.980 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_260 at time 1009589 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_257 at time 1009590 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk153_809 at time 1009604 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 1009604 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 1009605 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 1009612 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 1009616 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 1009619 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 1009679 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk150_806 at time 1009683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_260 at time 1009756 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 1009771 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 1017727 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 1017755 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk153_809 at time 2009623 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_260 at time 2009649 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 2009664 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 2009703 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[4]/TChk150_806 at time 2009715 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 2009750 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 2009767 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 2017701 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 2017713 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[5]/TChk153_809 at time 3009633 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_260 at time 3009634 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 3009649 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 3009766 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 3017632 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 4009620 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[4]/TChk153_809 at time 4009695 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 4009742 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 4017594 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 4017656 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 4017661 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 5009605 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk153_809 at time 5009657 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 5009687 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_260 at time 5017587 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 6009673 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 6009737 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[4]/TChk150_806 at time 6009765 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_257 at time 6017616 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 7017602 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 7017615 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_257 at time 7017617 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_260 at time 7017752 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 18:39:47 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 18:40:35 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 3445.754 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_231 at time 1009652 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_231 at time 1009684 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_228 at time 1009714 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_231 at time 1017644 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_231 at time 2009602 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_228 at time 2009689 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_231 at time 2009738 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_231 at time 2009761 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk153_728 at time 3009588 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_228 at time 3009659 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_231 at time 3009711 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_228 at time 3009735 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_231 at time 3009760 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_231 at time 3017682 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_228 at time 4009607 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_228 at time 4009710 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_231 at time 4009762 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_231 at time 4017685 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_228 at time 5009625 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_231 at time 5009646 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_231 at time 5009728 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_231 at time 6009729 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_228 at time 6009743 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_228 at time 6017637 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 18:43:08 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 18:44:18 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 3445.754 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_548 at time 1009652 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_548 at time 1009684 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_545 at time 1009714 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_548 at time 1017644 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_548 at time 2009602 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_545 at time 2009689 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_548 at time 2009738 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_548 at time 2009761 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[3]/TChk153_231 at time 3009588 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_545 at time 3009659 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk153_548 at time 3009711 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_545 at time 3009735 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_548 at time 3009760 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_548 at time 3017682 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_545 at time 4009607 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_545 at time 4009710 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_548 at time 4009762 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_548 at time 4017685 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[1]/TChk150_545 at time 5009625 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_548 at time 5009646 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk153_548 at time 5009728 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk153_548 at time 6009729 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[2]/TChk150_545 at time 6009743 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/wrk/2020.1/continuous/2020_05_27_2902540/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/UUT/duty_cycle_reg[0]/TChk150_545 at time 6017637 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 19:07:14 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 19:08:07 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 3445.754 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 19:18:32 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 19:19:20 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 3445.754 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 19:21:43 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 19:22:27 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 3445.754 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 19:25:02 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 19:25:47 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 3445.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_impl.sdf", for root module "testbench/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.pwm
+Compiling architecture behavior of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_time_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_impl -key {Post-Implementation:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 3445.754 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 19:42:40 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 19:43:37 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 19:44:49 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-21:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3445.754 ; gain = 0.000
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3829.477 ; gain = 383.723
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 22:12:40 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 22:13:30 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 22:14:27 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Zybo Z7-210351B3FC87A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 22:17:33 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 22:18:23 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_hw_manager
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 22:20:17 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-21:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3939.098 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 22:33:35 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 22:34:28 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 22:35:33 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-21:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3953.066 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 22:59:53 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 23:01:50 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 23:05:14 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 23:06:45 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 23:08:07 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-21:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 4408.375 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 23:25:24 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 23:26:38 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May  4 23:27:49 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-21:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 4408.375 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/pwm.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC87A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 23:50:28 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu May  4 23:51:54 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu May  4 23:59:52 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May  5 00:01:03 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 4408.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 291 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'pwm' is not ideal for floorplanning, since the cellview 'pwm' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.srcs/constrs_1/imports/proyectos/Zybo-Z7-Master.xdc]
+Finished Parsing XDC File [C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.srcs/constrs_1/imports/proyectos/Zybo-Z7-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4408.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim/testbench_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim/testbench_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 4408.375 ; gain = 0.000
+INFO: [SIM-utils-36] Netlist generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim/testbench_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim/testbench_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim/testbench_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.srcs/sim_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim'
+"xelab -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+ERROR: [XSIM 43-4544] C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.srcs/sim_1/new/testbench.vhd Line 39. VHDL integer data type can only be connected to Verilog int or integer ports. Connecting actual VHDL integer "test_last" to Verilog non-integer port "test_last" is not supported. 
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4408.375 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/synth/timing/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 4408.375 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri May  5 00:08:35 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri May  5 00:09:44 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/simulate.log"
+close_design
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/simulate.log"
+close_project
+open_project C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/simulate.log"
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri May  5 00:13:48 2023] Launched synth_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May  5 00:15:06 2023] Launched impl_1...
+Run output will be captured here: C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.runs/impl_1/runme.log
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/simulate.log"
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/simulate.log"
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation -mode post-implementation -type timing
+boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.sim/sim_1/impl/timing/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 00:37:25 2023...

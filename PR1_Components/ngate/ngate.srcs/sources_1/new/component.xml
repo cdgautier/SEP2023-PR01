@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>ngate</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>reset_in</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>reset_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>reset_out</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>reset_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>ngate</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3cb20443</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>ngate</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3cb20443</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f64a5dae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>reset_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>reset_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>ngate.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_3cb20443</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>ngate.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/ngate_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>ngate_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">ngate_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>ngate_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-05-08T14:46:35Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e7ccf5e_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1510b53d_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7419d499_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a4bc8b5_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c95a2ee_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55e51afa_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c9cea27_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ef2dbe1_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@319a51b8_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b7de18b_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@660efdae_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@220d2b9b_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ae8d86_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15e0a6db_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27f9dde0_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ed9c4cd_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ae5bfae_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ae050e9_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6de6ba19_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fabc6d7_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@386bf487_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c6c0cd7_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@175722cc_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44a91a96_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54dc7e61_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@317d9221_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42658757_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b2c67f4_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2210d948_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3515852b_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@649a77f2_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d361670_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43387615_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74bb8296_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9917400_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47062170_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d619523_ARCHIVE_LOCATION">c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="df7539b9"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7ef1b21e"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="dbe84a20"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="001fabe7"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,9 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto e2baa88e0c0d483599f89b1aab6d1d1f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+ERROR: [XSIM 43-4544] C:/STEM/SEP2023/proyectos/PR01_pwmdc/pwm_gen.srcs/sim_1/new/testbench.vhd Line 39. VHDL integer data type can only be connected to Verilog int or integer ports. Connecting actual VHDL integer "test_last" to Verilog non-integer port "test_last" is not supported. 

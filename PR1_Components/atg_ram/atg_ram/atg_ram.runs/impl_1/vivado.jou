@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May  8 11:11:19 2023
+# Process ID: 6824
+# Current directory: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.runs/impl_1
+# Command line: vivado.exe -log Atg_ram_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Atg_ram_wrapper.tcl -notrace
+# Log file: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.runs/impl_1/Atg_ram_wrapper.vdi
+# Journal file: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Atg_ram_wrapper.tcl -notrace

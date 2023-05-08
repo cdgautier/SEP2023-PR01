@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1683333950">
+  <File Type="ROUTE-PWR" Name="operator_full_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="operator_full.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="operator_full_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="operator_full_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="operator_full.msk"/>
+  <File Type="ROUTE-CLK" Name="operator_full_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="operator_full.vdi"/>
+  <File Type="BG-BIT" Name="operator_full.bit"/>
+  <File Type="BG-DRC" Name="operator_full.drc"/>
+  <File Type="BG-BGN" Name="operator_full.bgn"/>
+  <File Type="BG-BIN" Name="operator_full.bin"/>
+  <File Type="BITSTR-RBT" Name="operator_full.rbt"/>
+  <File Type="BITSTR-NKY" Name="operator_full.nky"/>
+  <File Type="BITSTR-BMM" Name="operator_full_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="operator_full_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="operator_full.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="operator_full.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="operator_full.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="operator_full_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="operator_full.hwdef"/>
+  <File Type="PLACE-IO" Name="operator_full_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="operator_full_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="operator_full_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="operator_full_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="operator_full_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="operator_full_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="operator_full_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="operator_full_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="operator_full_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="operator_full_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="operator_full_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="operator_full_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="operator_full_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="operator_full_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="operator_full_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="operator_full_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="operator_full_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="operator_full_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="operator_full_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="operator_full_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="operator_full_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="operator_full_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="operator_full_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="operator_full_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="operator_full_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="operator_full_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="operator_full_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="operator_full_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="operator_full_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="operator_full.pdi"/>
+  <File Type="RCFI_FILE" Name="operator_full.rcfi"/>
+  <File Type="CFI_FILE" Name="operator_full.cfi"/>
+  <File Type="RNPI_FILE" Name="operator_full.rnpi"/>
+  <File Type="NPI_FILE" Name="operator_full.npi"/>
+  <File Type="RBD_FILE" Name="operator_full.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/operator_full.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pwm_generator.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="operator_full"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/proyectos/Zybo-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Zybo-Z7-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1683047427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

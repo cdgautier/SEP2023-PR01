@@ -1,0 +1,343 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4A52A8707D67AF9E",
+      "device": "xc7z010clg400-1",
+      "name": "Atg_ram",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Ram_IP_0": "",
+      "selector_led2_0": "",
+      "verif_led_or_0": "",
+      "operator_full_0": "",
+      "operator_full_1": "",
+      "operator_full_2": "",
+      "op_choser_0": "",
+      "axi_traffic_gen_0": "",
+      "ngate_0": ""
+    },
+    "ports": {
+      "btn": {
+        "direction": "I"
+      },
+      "value": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "button_state": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "led1": {
+        "direction": "O"
+      },
+      "led2": {
+        "direction": "O"
+      },
+      "led3": {
+        "direction": "O"
+      },
+      "led_R": {
+        "direction": "O"
+      },
+      "led_G": {
+        "direction": "O"
+      },
+      "led_B": {
+        "direction": "O"
+      },
+      "led_verif_out": {
+        "direction": "O"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Atg_ram_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "Ram_IP_0": {
+        "vlnv": "xilinx.com:user:Ram_IP:1.0",
+        "xci_name": "Atg_ram_Ram_IP_0_0"
+      },
+      "selector_led2_0": {
+        "vlnv": "xilinx.com:user:selector_led2:1.0",
+        "xci_name": "Atg_ram_selector_led2_0_0"
+      },
+      "verif_led_or_0": {
+        "vlnv": "xilinx.com:user:verif_led_or:1.0",
+        "xci_name": "Atg_ram_verif_led_or_0_0"
+      },
+      "operator_full_0": {
+        "vlnv": "xilinx.com:user:operator_full:1.0",
+        "xci_name": "Atg_ram_operator_full_0_0"
+      },
+      "operator_full_1": {
+        "vlnv": "xilinx.com:user:operator_full:1.0",
+        "xci_name": "Atg_ram_operator_full_1_0"
+      },
+      "operator_full_2": {
+        "vlnv": "xilinx.com:user:operator_full:1.0",
+        "xci_name": "Atg_ram_operator_full_2_0"
+      },
+      "op_choser_0": {
+        "vlnv": "xilinx.com:user:op_choser:1.0",
+        "xci_name": "Atg_ram_op_choser_0_0"
+      },
+      "axi_traffic_gen_0": {
+        "vlnv": "xilinx.com:ip:axi_traffic_gen:3.0",
+        "xci_name": "Atg_ram_axi_traffic_gen_0_0",
+        "parameters": {
+          "C_ATG_MODE": {
+            "value": "AXI4-Lite"
+          },
+          "C_ATG_SYSINIT_MODES": {
+            "value": "System_Test"
+          },
+          "C_ATG_SYSTEM_CMD_MAX_RETRY": {
+            "value": "2147483647"
+          },
+          "C_ATG_SYSTEM_INIT_ADDR_MIF": {
+            "value": "../../../../../../../../Ay4_coe_files/addr.coe"
+          },
+          "C_ATG_SYSTEM_INIT_CTRL_MIF": {
+            "value": "../../../../../../../../Ay4_coe_files/ctrl.coe"
+          },
+          "C_ATG_SYSTEM_INIT_DATA_MIF": {
+            "value": "../../../../../../../../Ay4_coe_files/data.coe"
+          },
+          "C_ATG_SYSTEM_INIT_MASK_MIF": {
+            "value": "../../../../../../../../Ay4_coe_files/mask.coe"
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Reg1": {
+              "range": "4G",
+              "width": "32"
+            }
+          },
+          "interface_ports": {
+            "M_AXI_LITE_CH1": {
+              "mode": "Master",
+              "address_space_ref": "Reg1",
+              "base_address": {
+                "minimum": "0x00000000",
+                "maximum": "0xFFFFFFFF"
+              }
+            }
+          }
+        }
+      },
+      "ngate_0": {
+        "vlnv": "xilinx.com:user:ngate:1.0",
+        "xci_name": "Atg_ram_ngate_0_0"
+      }
+    },
+    "interface_nets": {
+      "axi_traffic_gen_0_M_AXI_LITE_CH1": {
+        "interface_ports": [
+          "axi_traffic_gen_0/M_AXI_LITE_CH1",
+          "Ram_IP_0/S00_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "operator_full_0_led_verif": {
+        "ports": [
+          "operator_full_0/led_verif",
+          "verif_led_or_0/led_verif_1"
+        ]
+      },
+      "operator_full_1_led_verif": {
+        "ports": [
+          "operator_full_1/led_verif",
+          "verif_led_or_0/led_verif_2"
+        ]
+      },
+      "operator_full_2_led_verif": {
+        "ports": [
+          "operator_full_2/led_verif",
+          "verif_led_or_0/led_verif_3"
+        ]
+      },
+      "operator_full_0_out_pwm": {
+        "ports": [
+          "operator_full_0/out_pwm",
+          "selector_led2_0/pwm1"
+        ]
+      },
+      "operator_full_1_out_pwm": {
+        "ports": [
+          "operator_full_1/out_pwm",
+          "selector_led2_0/pwm2"
+        ]
+      },
+      "operator_full_2_out_pwm": {
+        "ports": [
+          "operator_full_2/out_pwm",
+          "selector_led2_0/pwm3"
+        ]
+      },
+      "op_choser_0_value_out_1": {
+        "ports": [
+          "op_choser_0/value_out_1",
+          "operator_full_0/value"
+        ]
+      },
+      "op_choser_0_value_out_2": {
+        "ports": [
+          "op_choser_0/value_out_2",
+          "operator_full_1/value"
+        ]
+      },
+      "op_choser_0_value_out_3": {
+        "ports": [
+          "op_choser_0/value_out_3",
+          "operator_full_2/value"
+        ]
+      },
+      "op_choser_0_button_state_out_1": {
+        "ports": [
+          "op_choser_0/button_state_out_1",
+          "operator_full_0/button_state"
+        ]
+      },
+      "op_choser_0_button_state_out_2": {
+        "ports": [
+          "op_choser_0/button_state_out_2",
+          "operator_full_1/button_state"
+        ]
+      },
+      "op_choser_0_button_state_out_3": {
+        "ports": [
+          "op_choser_0/button_state_out_3",
+          "operator_full_2/button_state"
+        ]
+      },
+      "Ram_IP_0_led_selec": {
+        "ports": [
+          "Ram_IP_0/led_selec",
+          "selector_led2_0/led_selector",
+          "op_choser_0/led_select"
+        ]
+      },
+      "btn_0_1": {
+        "ports": [
+          "btn",
+          "Ram_IP_0/btn"
+        ]
+      },
+      "value_0_1": {
+        "ports": [
+          "value",
+          "op_choser_0/value"
+        ]
+      },
+      "button_state_0_1": {
+        "ports": [
+          "button_state",
+          "op_choser_0/button_state"
+        ]
+      },
+      "ngate_0_reset_out": {
+        "ports": [
+          "ngate_0/reset_out",
+          "axi_traffic_gen_0/s_axi_aresetn",
+          "Ram_IP_0/s00_axi_aresetn"
+        ]
+      },
+      "selector_led2_0_led1": {
+        "ports": [
+          "selector_led2_0/led1",
+          "led1"
+        ]
+      },
+      "selector_led2_0_led2": {
+        "ports": [
+          "selector_led2_0/led2",
+          "led2"
+        ]
+      },
+      "selector_led2_0_led3": {
+        "ports": [
+          "selector_led2_0/led3",
+          "led3"
+        ]
+      },
+      "selector_led2_0_led_R": {
+        "ports": [
+          "selector_led2_0/led_R",
+          "led_R"
+        ]
+      },
+      "selector_led2_0_led_G": {
+        "ports": [
+          "selector_led2_0/led_G",
+          "led_G"
+        ]
+      },
+      "selector_led2_0_led_B": {
+        "ports": [
+          "selector_led2_0/led_B",
+          "led_B"
+        ]
+      },
+      "verif_led_or_0_led_verif_out": {
+        "ports": [
+          "verif_led_or_0/led_verif_out",
+          "led_verif_out"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "operator_full_2/clk",
+          "op_choser_0/clk",
+          "operator_full_1/clk",
+          "operator_full_0/clk",
+          "selector_led2_0/clk",
+          "axi_traffic_gen_0/s_axi_aclk",
+          "Ram_IP_0/s00_axi_aclk"
+        ]
+      }
+    },
+    "addressing": {
+      "/axi_traffic_gen_0": {
+        "address_spaces": {
+          "Reg1": {
+            "range": "4G",
+            "width": "32"
+          }
+        }
+      }
+    }
+  }
+}

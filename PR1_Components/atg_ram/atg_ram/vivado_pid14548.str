@@ -1,0 +1,1234 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 14548
+License: Customer
+
+Current time: 	Sun May 07 22:48:34 CLST 2023
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Camilo
+User home directory: C:/Users/Camilo
+User working directory: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Camilo/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Camilo/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Camilo/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/vivado.log
+Vivado journal file location: 	C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/vivado.jou
+Engine tmp dir: 	C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/.Xil/Vivado-14548-LAPTOP-D88VNJP2
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,049 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Camilo\Desktop\bloques_separados5\atg_ram\atg_ram\atg_ram.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/STEM/SEP2023/proyectos/SEP2023-PR01/bloques_separados5/atg_ram/atg_ram' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full/pwm_gen.srcs/sources_1/new'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 114 MB (+117159kb) [00:00:13]
+// [Engine Memory]: 1,049 MB (+948550kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  2710 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 57 MB. Current time: 5/7/23, 10:48:38 PM CLST
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1061.004 ; gain = 0.000 
+// Project name: atg_ram; location: C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// br (cs): Create Block Design: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (br)
+dismissDialog("Create Block Design"); // br (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/Atg_ram.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Successfully read diagram <Atg_ram> from BD file <C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/atg_ram/atg_ram.srcs/sources_1/bd/Atg_ram/Atg_ram.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 121 MB (+1451kb) [00:00:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  1176 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1061.004 ; gain = 0.000 
+// 'bJ' command handler elapsed time: 7 seconds
+dismissDialog("Open Block Design"); // bz (cs)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (az, ResizableWindow)
+// [GUI Memory]: 138 MB (+10995kb) [00:00:45]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (J, cs)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cs): Settings: addNotify
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // B (E, d) - Node
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // B (E, d)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // B (E, d)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (g, d)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (g, d)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new'. 
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (g, d)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+// Elapsed time: 29 seconds
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  C:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+// [GUI Memory]: 145 MB (+740kb) [00:01:27]
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+// Elapsed time: 11 seconds
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/operator_full");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 C:/Users/Camilo/Desktop/bloques_separados5/operator_full} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/op_choser");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full C:/Users/Camilo/Desktop/bloques_separados5/op_choser} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/led_verif_or");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser C:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+// Elapsed time: 15 seconds
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/selector_led2");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or C:/Users/Camilo/Desktop/bloques_separados5/selector_led2} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Camilo/Desktop/bloques_separados5/selector_led2", 4); // bX (J, d)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (g, d)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+// c (d): Add Repository: addNotify
+dismissDialog("Add Repository"); // c (d)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1", 2); // bX (J, d)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (g, d)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs", 1); // bX (J, d)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (E, d)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (d)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (d)
+dismissDialog("Settings"); // d (cs)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "sele"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "selec"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "led"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (az, ResizableWindow)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (J, cs)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (J, cs)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cs): Settings: addNotify
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs", 1); // bX (J, d)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (g, d)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full C:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (g, d)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+// Elapsed time: 20 seconds
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/selector_led2");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser C:/Users/Camilo/Desktop/bloques_separados5/selector_led2 c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/selector_led2'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Camilo/Desktop/bloques_separados5/selector_led2", 3); // bX (J, d)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (g, d)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (E, d)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. 
+// Elapsed time: 152 seconds
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+setFolderChooser("c:/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or c:/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new'. 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (E, d)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/operator_full'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/op_choser'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new'. 
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (d)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (d)
+dismissDialog("Settings"); // d (cs)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "selec"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "selector_led2_v1_0", 1, "selector_led2_v1_0", 0, false); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "selector_led2_v1_0", 1, "selector_led2_v1_0", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "selector_led2_v1_0", 1); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "selector_led2_v1_0", 1, "selector_led2_v1_0", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: LOAD_FEATURE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:selector_led2:1.0 selector_led2_0 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+// [GUI Memory]: 154 MB (+1065kb) [00:07:18]
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "verif"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "verif_led_or_v1_0", 4, "verif_led_or_v1_0", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "verif_led_or_v1_0", 4); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "verif_led_or_v1_0", 4, "verif_led_or_v1_0", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:verif_led_or:1.0 verif_led_or_0 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ram"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Ram_IP_v1.0", 3, "Ram_IP_v1.0", 0, false); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Ram_IP_v1.0", 3, "Ram_IP_v1.0", 0, false); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Ram_IP_v1.0", 3, "Ram_IP_v1.0", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Ram_IP_v1.0", 3); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Ram_IP_v1.0", 3, "Ram_IP_v1.0", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:Ram_IP:1.0 Ram_IP_0 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "oper"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:operator_full:1.0 operator_full_0 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "oper"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "opera"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:operator_full:1.0 operator_full_1 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "oper"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "opera"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "operato"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "operator"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "operator_full_v1_0", 0, "operator_full_v1_0", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:operator_full:1.0 operator_full_2 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {3 633 -259} [get_bd_cells operator_full_1]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 633 -259} [get_bd_cells operator_full_1] 
+// Tcl Command: 'set_property location {2 625 -138} [get_bd_cells operator_full_2]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 625 -138} [get_bd_cells operator_full_2] 
+// Tcl Command: 'set_property location {0.5 183 -350} [get_bd_cells Ram_IP_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 183 -350} [get_bd_cells Ram_IP_0] 
+// Tcl Command: 'set_property location {2.5 950 -335} [get_bd_cells selector_led2_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 950 -335} [get_bd_cells selector_led2_0] 
+// Tcl Command: 'set_property location {1 194 -170} [get_bd_cells verif_led_or_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 194 -170} [get_bd_cells verif_led_or_0] 
+// Elapsed time: 25 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Tcl Command: 'set_property location {3 900 -140} [get_bd_cells verif_led_or_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 900 -140} [get_bd_cells verif_led_or_0] 
+// Elapsed time: 20 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "op"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "op_choser_v1_0", 0, "op_choser_v1_0", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "op_choser_v1_0", 0); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "op_choser_v1_0", 0, "op_choser_v1_0", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:op_choser:1.0 op_choser_0 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {1 253 -148} [get_bd_cells op_choser_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 253 -148} [get_bd_cells op_choser_0] 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "traf"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "traff"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Traffic Generator", 0, "AXI Traffic Generator", 0, false); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Traffic Generator", 0, "AXI Traffic Generator", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Traffic Generator", 0); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Traffic Generator", 0, "AXI Traffic Generator", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_traffic_gen:3.0 axi_traffic_gen_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// bz (cs):  Add IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bz (cs)
+// Tcl Command: 'set_property location {1 123 -401} [get_bd_cells axi_traffic_gen_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 123 -401} [get_bd_cells axi_traffic_gen_0] 
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // Q (aI, cs)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+// Elapsed time: 10 seconds
+selectRadioButton((HResource) null, "AXI4-Lite"); // aV
+selectComboBox("Mode (C_ATG_SYSINIT_MODES)", "System Test", 1); // E (E, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+// Elapsed time: 16 seconds
+setFileChooser("C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/addr.coe");
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+setFileChooser("C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/data.coe");
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+setFileChooser("C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/mask.coe");
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+setFileChooser("C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/ctrl.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// Tcl Command: 'set_property -dict [list CONFIG.C_ATG_SYSTEM_CMD_MAX_RETRY {2147483647} CONFIG.C_ATG_SYSTEM_INIT_DATA_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/data.coe} CONFIG.C_ATG_SYSTEM_INIT_ADDR_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/addr.coe} CONFIG.C_ATG_SYSTEM_INIT_MASK_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/mask.coe} CONFIG.C_ATG_SYSTEM_INIT_CTRL_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/ctrl.coe} CONFIG.C_ATG_MODE {AXI4-Lite} CONFIG.C_ATG_SYSINIT_MODES {System_Test}] [get_bd_cells axi_traffic_gen_0]'
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+dismissDialog("Re-customize IP"); // r (cs)
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.C_ATG_SYSTEM_CMD_MAX_RETRY {2147483647} CONFIG.C_ATG_SYSTEM_INIT_DATA_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/data.coe} CONFIG.C_ATG_SYSTEM_INIT_ADDR_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/addr.coe} CONFIG.C_ATG_SYSTEM_INIT_MASK_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/mask.coe} CONFIG.C_ATG_SYSTEM_INIT_CTRL_MIF {C:/Users/Camilo/Desktop/bloques_separados5/Ay4_coe_files/ctrl.coe} CONFIG.C_ATG_MODE {AXI4-Lite} CONFIG.C_ATG_SYSINIT_MODES {System_Test}] [get_bd_cells axi_traffic_gen_0] 
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cs): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+dismissDialog("Customize IP"); // bz (r)
+// Tcl Command: 'set_property location {2 388 -142} [get_bd_cells op_choser_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 388 -142} [get_bd_cells op_choser_0] 
+// Tcl Command: 'set_property location {0.5 -54 -150} [get_bd_cells Ram_IP_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 -54 -150} [get_bd_cells Ram_IP_0] 
+// Tcl Command: 'set_property location {2.5 419 -198} [get_bd_cells op_choser_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 419 -198} [get_bd_cells op_choser_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/value_out_1] [get_bd_pins operator_full_0/value] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/value_out_2] [get_bd_pins operator_full_1/value] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/value_out_3] [get_bd_pins operator_full_2/value] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/button_state_out_1] [get_bd_pins operator_full_0/button_state] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/button_state_out_2] [get_bd_pins operator_full_1/button_state] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/button_state_out_3] [get_bd_pins operator_full_2/button_state] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins operator_full_0/out_pwm] [get_bd_pins selector_led2_0/pwm1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins operator_full_1/out_pwm] [get_bd_pins selector_led2_0/pwm2] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins operator_full_2/out_pwm] [get_bd_pins selector_led2_0/pwm3] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins operator_full_0/led_verif] [get_bd_pins verif_led_or_0/led_verif_1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins operator_full_1/led_verif] [get_bd_pins verif_led_or_0/led_verif_2] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins operator_full_2/led_verif] [get_bd_pins verif_led_or_0/led_verif_3] 
+// Tcl Command: 'set_property location {2 -17 -226} [get_bd_cells Ram_IP_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 -17 -226} [get_bd_cells Ram_IP_0] 
+// [GUI Memory]: 162 MB (+860kb) [00:11:03]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins Ram_IP_0/led_selec] [get_bd_pins op_choser_0/led_select] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins Ram_IP_0/led_selec] [get_bd_pins selector_led2_0/led_selector] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,071 MB. GUI used memory: 91 MB. Current time: 5/7/23, 11:00:16 PM CLST
+// Elapsed time: 135 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (dq, cs)
+// ai (cs): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (6 out of 6 selected)]", 0, true, true, ui.utils.collection.couples.TriState.True); // aw (J, ai) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ai)
+dismissDialog("Run Connection Automation"); // ai (cs)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// bz (cs):  Run Connection Automation : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins op_choser_0/clk] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins operator_full_0/clk] 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins operator_full_1/clk] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins operator_full_2/clk] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// [Engine Memory]: 1,211 MB (+115124kb) [00:12:22]
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_traffic_gen_0/M_AXI_LITE_CH1} Slave {/Ram_IP_0/S00_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins Ram_IP_0/S00_AXI] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,217 MB. GUI used memory: 91 MB. Current time: 5/7/23, 11:00:46 PM CLST
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: Slave segment '/Ram_IP_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/axi_traffic_gen_0/Reg1' at <0x44A0_0000 [ 64K ]>. 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins selector_led2_0/clk] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bz (cs)
+// [Engine Memory]: 1,274 MB (+1853kb) [00:12:24]
+// Elapsed time: 15 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1340, 50, 1629, 830, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets axi_traffic_gen_0_axi_periph_M00_AXI] [get_bd_intf_nets axi_traffic_gen_0_M_AXI_LITE_CH1] [get_bd_cells axi_traffic_gen_0_axi_periph] 
+// Elapsed time: 13 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 698, 346, 1629, 830, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_cells rst_clk_wiz_100M] 
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 359, 436, 1629, 830, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, Popup.HeavyWeightWindow)
+// Elapsed time: 22 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1099, 537, 1629, 830, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1090, 535, 1629, 830, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_4_clk_out1] [get_bd_cells clk_wiz_4] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1] [get_bd_cells clk_wiz_1] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_2_clk_out1] [get_bd_cells clk_wiz_2] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_3_clk_out1] [get_bd_cells clk_wiz_3] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells clk_wiz] 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_traffic_gen_0/M_AXI_LITE_CH1] [get_bd_intf_pins Ram_IP_0/S00_AXI] 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins Ram_IP_0/btn] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/clk] [get_bd_pins operator_full_0/clk] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/clk] [get_bd_pins operator_full_1/clk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/clk] [get_bd_pins operator_full_2/clk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins op_choser_0/clk] [get_bd_pins selector_led2_0/clk] 
+// Elapsed time: 203 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cs): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 14 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "ngate"); // ac (Q, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // t (an, f)
+selectButton(RDIResource.HFolderChooserHelpers_JUMP_TO_CURRENT_WORKING_DIRECTORY, (String) null); // a (c, JDialog)
+// Elapsed time: 23 seconds
+setFolderChooser("C:/Users/Camilo/Desktop/bloques_separados5/ngate");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // i (T, f)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,328 MB. GUI used memory: 97 MB. Current time: 5/7/23, 11:06:11 PM CLST
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zybo Z7-10 ; Zybo Z7-10 ; digilentinc.com ; 1.1 ; xc7z010clg400-1 ; 400 ; B.2 ; 100 ; 17600 ; 35200 ; 60 ; 0 ; 80 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "Zybo Z7-10", 0); // d (J, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// bz (f):  Create Project : addNotify
+selectButton("OptionPane.button", "No"); // JButton (v, C)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project ngate C:/Users/Camilo/Desktop/bloques_separados5/ngate -part xc7z010clg400-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,339 MB (+1447kb) [00:17:56]
+// WARNING: HEventQueue.dispatchEvent() is taking  2615 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1366.410 ; gain = 17.941 
+// TclEventType: RSB_BITABEN_BOARDDATA_REFRESH
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:zybo-z7-10:part0:1.1 [current_project] 
+// TclEventType: PROJECT_CHANGE
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 60 seconds
+// Tcl Message: set_property target_language VHDL [current_project] 
+dismissDialog("Create Project"); // bz (f)
+dismissDialog("New Project"); // f (cs)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "ngate"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir C:/Users/Camilo/Desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir C:/Users/Camilo/Desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open C:/Users/Camilo/Desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new/ngate.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Camilo/Desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new/ngate.vhd 
+// I (cs): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ngate(Behavioral) (ngate.vhd)]", 1, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ngate(Behavioral) (ngate.vhd)]", 1, false, false, false, false, false, true); // B (F, cs) - Double Click
+// [GUI Memory]: 174 MB (+4321kb) [00:18:22]
+selectCodeEditor("ngate.vhd", 118, 322); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 13, 333); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 54, 330); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,348 MB. GUI used memory: 116 MB. Current time: 5/7/23, 11:06:56 PM CLST
+// Elapsed time: 24 seconds
+selectCodeEditor("ngate.vhd", 52, 473); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("ngate.vhd", 265, 431); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cs): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// bz (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bz (Q)
+setText(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, "c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new"); // ao (an, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 11 seconds
+dismissDialog("Create and Package New IP"); // Q (cs)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: ipx::package_project -root_dir c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'reset_in' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'reset_out' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cs):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bz (cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (J, cs)
+// [GUI Memory]: 192 MB (+9416kb) [00:19:44]
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a (c, cs)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// bz (cs):  Package IP : addNotify
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new'. 
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 123 MB. Current time: 5/7/23, 11:08:11 PM CLST
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cs)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// bz (cs):  Package IP : addNotify
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new' 
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,436 MB (+31629kb) [00:19:50]
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (J, cs)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cs): Settings: addNotify
+// Tcl Message: current_project atg_ram 
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
+setFolderChooser("c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Camilo/Desktop/bloques_separados5/atg_ram/ip_repo/Ram_IP_1.0 c:/Users/Camilo/Desktop/bloques_separados5/operator_full c:/Users/Camilo/Desktop/bloques_separados5/op_choser c:/Users/Camilo/Desktop/bloques_separados5/led_verif_or c:/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// c (d): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (d)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (E, d)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (d)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (d)
+dismissDialog("Settings"); // d (cs)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ngat"); // OverlayTextField (az, ResizableWindow)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 115 MB. Current time: 5/7/23, 11:08:31 PM CLST
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ngate_v1_0", 0, "ngate_v1_0", 0, false); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ngate_v1_0", 0, "ngate_v1_0", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ngate_v1_0", 0); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ngate_v1_0", 0, "ngate_v1_0", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:ngate:1.0 ngate_0 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {1 -211 -500} [get_bd_cells ngate_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 -211 -500} [get_bd_cells ngate_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] 
+// [Engine Memory]: 1,525 MB (+18333kb) [00:20:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,545 MB. GUI used memory: 114 MB. Current time: 5/7/23, 11:08:46 PM CLST
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ngate.vhd", 1); // m (l, cs)
+selectCodeEditor("ngate.vhd", 252, 438); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ngate", 2); // m (l, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ar (J, cs)
+// Elapsed time: 11 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (J, cs)
+// Elapsed time: 13 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar (J, cs)
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M (J, cs)
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "reset_in ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M (J, cs)
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "reset_out ; master ;  ;  ;  ;  ;  ;  ;  ; ", 3); // M (J, cs)
+collapseTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "reset_out ; master ;  ;  ;  ;  ;  ;  ;  ; ", 3); // M (J, cs)
+collapseTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "reset_in ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M (J, cs)
+collapseTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ar (J, cs)
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", true); // g (at, cs): TRUE
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g (at, cs): FALSE
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ngate.vhd", 1); // m (l, cs)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ngate", 2); // m (l, cs)
+selectButton(PAResourceEtoH.GUICustomizationTreePanel_ADD_NEW_PAGE, (String) null); // E (g, cs)
+// Elapsed time: 11 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // ar (J, cs)
+selectTable(PAResourceEtoH.FamilySupportTable_DEVICE_SUPPORT_TABLE, "qzynq ; Production", 1, "Production", 1); // S (J, cs)
+editTable(PAResourceEtoH.FamilySupportTable_DEVICE_SUPPORT_TABLE, "Production", 1, "Life Cycle", 1); // S (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (J, cs)
+expandTreeTable(PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, "UI Layout ;  ;  ; false ;  ;  ; ", 4); // M (J, cs)
+collapseTreeTable(PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, "UI Layout ;  ;  ; false ;  ;  ; ", 4); // M (J, cs)
+expandTreeTable(PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, "Simulation ;  ;  ; false ;  ;  ; ngate", 2); // M (J, cs)
+collapseTreeTable(PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, "Simulation ;  ;  ; false ;  ;  ; ngate", 2); // M (J, cs)
+expandTreeTable(PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, "Synthesis ;  ;  ; false ;  ;  ; ngate", 1); // M (J, cs)
+collapseTreeTable(PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, "Synthesis ;  ;  ; false ;  ;  ; ngate", 1); // M (J, cs)
+collapseTreeTable(PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, "Standard ;  ;  ; false ;  ;  ; ", 0); // M (J, cs)
+collapseTreeTable(PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, "Advanced ;  ;  ; false ;  ;  ; ", 1); // M (J, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ngate.vhd", 1); // m (l, cs)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ngate", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ngate", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ngate.vhd", 1); // m (l, cs)
+selectCodeEditor("ngate.vhd", 109, 435); // bP (w, cs)
+// Elapsed time: 27 seconds
+selectCodeEditor("ngate.vhd", 336, 330); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 161, 436); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 167, 432); // bP (w, cs)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cs)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 199, 122, 1629, 830, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cs)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Properties..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 189, 110, 1200, 830, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cs)
+selectButton(PAResourceQtoS.SystemBuilderView_SEARCH, "System_RSB_SYSTEM_TREE_POPUP"); // E (g, cs)
+setText("PAResourceQtoS.SystemTreePopup_DESIGN_HIERARCHY_TREE_SEARCH_FIELD", (String) null); // OverlayTextField (n, ResizableWindow)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "n"); // OverlayTextField (az, ResizableWindow)
+// Elapsed time: 38 seconds
+selectCodeEditor("ngate.vhd", 249, 482); // bP (w, cs)
+// Elapsed time: 20 seconds
+selectCodeEditor("ngate.vhd", 85, 476); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 75, 461); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 28, 471); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 31, 464); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 22, 486); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 67, 483); // bP (w, cs)
+selectCodeEditor("ngate.vhd", 185, 368); // bP (w, cs)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ngate.vhd", 327, 293); // bP (w, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cs): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// 'q' command handler elapsed time: 5 seconds
+dismissDialog("Create and Package New IP"); // Q (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ngate", 2); // m (l, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (J, cs)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (J, cs)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // h (M, cs)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: current_project ngate 
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (J, cs)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cs)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 4 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new' 
+// bz (cs):  Package IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cs)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 5 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// bz (cs):  Package IP : addNotify
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// Elapsed time: 23 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: current_project atg_ram 
+// Tcl Message: regenerate_bd_layout 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 193, 447, 1200, 830, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells ngate_0] 
+selectButton(PAResourceQtoS.SystemBuilderView_SEARCH, "System_RSB_SYSTEM_TREE_POPUP"); // E (g, cs)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (ds, cs)
