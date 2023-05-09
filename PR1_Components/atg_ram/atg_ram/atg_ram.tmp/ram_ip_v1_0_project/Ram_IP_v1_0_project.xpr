@@ -6,7 +6,7 @@
 <Project Version="7" Minor="49" Path="d:/u_catolica/2023-1/sep/proyecto/sep2023-pr01/pr1_components/atg_ram/atg_ram/atg_ram.tmp/ram_ip_v1_0_project/Ram_IP_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="797e898ad7024688bb3793757e93d230"/>
+    <Option Name="Id" Val="65de180d6bff4ddf9ca6055799940421"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -31,11 +31,11 @@
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../U_Catolica/2023-1/SEP/Proyecto/SEP2023-PR01/PR1_Components/atg_ram/ip_repo/Ram_IP_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../U_Catolica/2023-1/SEP/Proyecto/SEP2023-PR01/PR1_Components/ngate"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../U_Catolica/2023-1/SEP/Proyecto/SEP2023-PR01/PR1_Components/operator_full"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../U_Catolica/2023-1/SEP/Proyecto/SEP2023-PR01/PR1_Components/op_choser"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../U_Catolica/2023-1/SEP/Proyecto/SEP2023-PR01/PR1_Components/led_verif_or"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../U_Catolica/2023-1/users/camilo/desktop/bloques_separados5/selector_led2/selector_led2.srcs/sources_1/new"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../U_Catolica/2023-1/users/camilo/desktop/bloques_separados5/ngate/ngate.srcs/sources_1/new"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../../U_Catolica/2023-1/SEP/Proyecto/SEP2023-PR01/PR1_Components/selector_led2"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PSRCDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>

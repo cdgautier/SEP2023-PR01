@@ -126,6 +126,7 @@ architecture arch_imp of Ram_IP_v1_0_S00_AXI is
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
     
+    signal countC     : integer:=0;
     signal countB     : integer:=0;
     signal last_button_state: std_logic:='0';
 begin
@@ -395,10 +396,10 @@ begin
 
 
 	-- Add user logic here
-process(S_AXI_ACLK, last_button_state) is
+process(S_AXI_ACLK, btn) is
 begin
     if(rising_edge(S_AXI_ACLK)) then
-        if(btn='1' and last_button_state='0') then
+        if(btn='1' and last_button_state='0' and countC=0) then
             if(countB = 0) then
                 ram_data(1) <= slv_reg1(3 downto 0);
                 countB<=1;
@@ -411,9 +412,24 @@ begin
             elsif(countB = 3) then 
                 ram_data(0) <= slv_reg0(3 downto 0);
                 countB<=0;
+                countC<=1;
             end if;
-        elsif(btn = '0') then
+            
+        elsif(btn='1' and last_button_state='0' and countC=1) then
               --ram_data <= ("1111","1111","1111","1111");
+              if(countB = 0) then
+                
+                countB<=1;
+            elsif(countB = 1) then 
+                
+                countB<=2;
+            elsif(countB = 2) then 
+                
+                countB<=3;
+            elsif(countB = 3) then 
+                
+                countB<=0;
+            end if;
         end if;
         
     end if;
