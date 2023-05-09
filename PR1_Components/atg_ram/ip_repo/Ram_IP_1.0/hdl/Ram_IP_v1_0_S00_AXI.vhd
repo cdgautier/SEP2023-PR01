@@ -127,6 +127,7 @@ architecture arch_imp of Ram_IP_v1_0_S00_AXI is
 	signal aw_en	: std_logic;
     
     signal countB     : integer:=0;
+    signal last_button_state: std_logic:='0';
 begin
 	-- I/O Connections assignments
 
@@ -394,10 +395,10 @@ begin
 
 
 	-- Add user logic here
-process(S_AXI_ACLK) is
+process(S_AXI_ACLK, last_button_state) is
 begin
     if(rising_edge(S_AXI_ACLK)) then
-        if(btn='1') then
+        if(btn='1' and last_button_state='0') then
             if(countB = 0) then
                 ram_data(1) <= slv_reg1(3 downto 0);
                 countB<=1;
@@ -408,13 +409,15 @@ begin
                 ram_data(3) <= slv_reg3(3 downto 0);
                 countB<=3;
             elsif(countB = 3) then 
-                ram_data(3) <= slv_reg0(3 downto 0);
+                ram_data(0) <= slv_reg0(3 downto 0);
                 countB<=0;
             end if;
         elsif(btn = '0') then
               --ram_data <= ("1111","1111","1111","1111");
         end if;
+        
     end if;
+    last_button_state <= btn;
 end process;
 
 led_selec <= ram_data(countB);

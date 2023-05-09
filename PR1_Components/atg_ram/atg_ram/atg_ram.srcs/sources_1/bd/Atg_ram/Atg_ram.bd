@@ -10,7 +10,6 @@
       "validated": "true"
     },
     "design_tree": {
-      "Ram_IP_0": "",
       "selector_led2_0": "",
       "verif_led_or_0": "",
       "operator_full_0": "",
@@ -18,7 +17,8 @@
       "operator_full_2": "",
       "op_choser_0": "",
       "axi_traffic_gen_0": "",
-      "ngate_0": ""
+      "ngate_0": "",
+      "Ram_IP_0": ""
     },
     "ports": {
       "btn": {
@@ -83,10 +83,6 @@
       }
     },
     "components": {
-      "Ram_IP_0": {
-        "vlnv": "xilinx.com:user:Ram_IP:1.0",
-        "xci_name": "Atg_ram_Ram_IP_0_0"
-      },
       "selector_led2_0": {
         "vlnv": "xilinx.com:user:selector_led2:1.0",
         "xci_name": "Atg_ram_selector_led2_0_0"
@@ -159,6 +155,10 @@
       "ngate_0": {
         "vlnv": "xilinx.com:user:ngate:1.0",
         "xci_name": "Atg_ram_ngate_0_0"
+      },
+      "Ram_IP_0": {
+        "vlnv": "xilinx.com:user:Ram_IP:1.0",
+        "xci_name": "Atg_ram_Ram_IP_0_0"
       }
     },
     "interface_nets": {

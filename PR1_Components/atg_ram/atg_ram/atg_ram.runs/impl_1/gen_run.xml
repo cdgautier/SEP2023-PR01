@@ -1,80 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1683558486">
-  <File Type="BITSTR-BMM" Name="Atg_ram_wrapper_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Atg_ram_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Atg_ram_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="Atg_ram_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Atg_ram_wrapper.tcl"/>
-  <File Type="OPT-TIMING" Name="Atg_ram_wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Atg_ram_wrapper_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="Atg_ram_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Atg_ram_wrapper_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="Atg_ram_wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="Atg_ram_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Atg_ram_wrapper.vdi"/>
+  <File Type="BG-BIT" Name="Atg_ram_wrapper.bit"/>
+  <File Type="BG-DRC" Name="Atg_ram_wrapper.drc"/>
+  <File Type="BG-BGN" Name="Atg_ram_wrapper.bgn"/>
+  <File Type="BG-BIN" Name="Atg_ram_wrapper.bin"/>
+  <File Type="BITSTR-RBT" Name="Atg_ram_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="Atg_ram_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="Atg_ram_wrapper_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Atg_ram_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Atg_ram_wrapper.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Atg_ram_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Atg_ram_wrapper.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="Atg_ram_wrapper_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Atg_ram_wrapper.hwdef"/>
-  <File Type="PWROPT-DCP" Name="Atg_ram_wrapper_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Atg_ram_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Atg_ram_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="Atg_ram_wrapper_placed.dcp"/>
   <File Type="PLACE-IO" Name="Atg_ram_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Atg_ram_wrapper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Atg_ram_wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Atg_ram_wrapper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Atg_ram_wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Atg_ram_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Atg_ram_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="Atg_ram_wrapper_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Atg_ram_wrapper_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="Atg_ram_wrapper.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Atg_ram_wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Atg_ram_wrapper_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Atg_ram_wrapper_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="Atg_ram_wrapper.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="Atg_ram_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Atg_ram_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Atg_ram_wrapper_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Atg_ram_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Atg_ram_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Atg_ram_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Atg_ram_wrapper_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Atg_ram_wrapper.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Atg_ram_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Atg_ram_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Atg_ram_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="Atg_ram_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Atg_ram_wrapper_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Atg_ram_wrapper_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Atg_ram_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Atg_ram_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Atg_ram_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Atg_ram_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Atg_ram_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Atg_ram_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Atg_ram_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Atg_ram_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Atg_ram_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Atg_ram_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Atg_ram_wrapper_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Atg_ram_wrapper_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Atg_ram_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Atg_ram_wrapper_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Atg_ram_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Atg_ram_wrapper_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Atg_ram_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Atg_ram_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Atg_ram_wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Atg_ram_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Atg_ram_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Atg_ram_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Atg_ram_wrapper_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="Atg_ram_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Atg_ram_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="Atg_ram_wrapper.rbt"/>
-  <File Type="BITSTR-NKY" Name="Atg_ram_wrapper.nky"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Atg_ram_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Atg_ram_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Atg_ram_wrapper_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="Atg_ram_wrapper.pdi"/>
   <File Type="RCFI_FILE" Name="Atg_ram_wrapper.rcfi"/>
   <File Type="CFI_FILE" Name="Atg_ram_wrapper.cfi"/>
   <File Type="RNPI_FILE" Name="Atg_ram_wrapper.rnpi"/>
   <File Type="NPI_FILE" Name="Atg_ram_wrapper.npi"/>
   <File Type="RBD_FILE" Name="Atg_ram_wrapper.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Atg_ram_wrapper.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="Atg_ram_wrapper.sysdef"/>
-  <File Type="BG-BGN" Name="Atg_ram_wrapper.bgn"/>
-  <File Type="BG-DRC" Name="Atg_ram_wrapper.drc"/>
-  <File Type="RDI-RDI" Name="Atg_ram_wrapper.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/Atg_ram/Atg_ram.bd">
@@ -151,14 +133,15 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Atg_ram_Ram_IP_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Atg_ram_selector_led2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Atg_ram_verif_led_or_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Atg_ram_ngate_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Atg_ram_axi_traffic_gen_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Atg_ram_op_choser_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Atg_ram_ngate_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Atg_ram_operator_full_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Atg_ram_op_choser_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Atg_ram_operator_full_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Atg_ram_operator_full_0_0"/>
 </GenRun>
